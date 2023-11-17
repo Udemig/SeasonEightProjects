@@ -40,12 +40,13 @@ button {
   border-radius: 15px;
   font-size: 15px;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--black);
+  overflow-x: hidden;
 }
 
 section {
@@ -176,21 +177,21 @@ footer {
   gap: 100px;
 }
 
-.image-sec-info{
+.image-sec-info {
   max-width: 600px;
   display: grid;
   gap: 30px;
 }
 
-.image-sec-info h1{
+.image-sec-info h1 {
   font-size: 35px;
 }
 
-.image-sec-info button{
+.image-sec-info button {
   border: 1px solid transparent;
 }
 
-.image-sec-info button:hover{
+.image-sec-info button:hover {
   border: 1px solid var(--green);
   background-color: var(--green2);
   color: var(--white);
@@ -205,7 +206,7 @@ footer {
 .window {
   min-width: 200px;
   height: 400px;
-  background: url(/images/sec2.jpg);
+  background: url(/8-cuma-proje-1/images/sec2.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -216,9 +217,72 @@ footer {
   border-radius: 40px;
 }
 
-
-
 /*Pencereler Alanı Bitiş*/
+
+/*cardlar alanı başlangıç*/
+
+.cards-sec-info {
+  max-width: 600px;
+  display: grid;
+  gap: 40px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.card video {
+  width: 200px;
+}
+
+/*cardlar alanı bitiş*/
+
+/*Liste Alanı Başlangıç*/
+
+.step-sec-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.step-sec-info p {
+  max-width: 400px;
+}
+
+.step-sec-info h1 {
+  max-width: 360px;
+}
+
+#step-sec ul li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding-bottom: 40px;
+  margin-top: 40px;
+}
+
+#step-sec ul li h1 span {
+  color: gray;
+  font-size: 15px;
+}
+
+#step-sec ul li img {
+  width: 50px;
+}
+
+/*Liste Alanı Bitiş*/
+
+
+
+
+
 
 /*Responsive Ayarlamalar*/
 
@@ -253,6 +317,15 @@ footer {
 
   .footer-links {
     align-items: center;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .card {
+    max-width: 400px;
   }
 }
 
